@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  last_check: 2022-09-23 18:16:13
+  next_check: 2022-09-23 18:16:13
+  equipment: one
+
+two:
+  name: MyString
+  code: MyString
+  last_check: 2022-09-23 18:16:13
+  next_check: 2022-09-23 18:16:13
+  equipment: two
