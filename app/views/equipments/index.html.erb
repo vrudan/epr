@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Equipment</h1>
-
+<h1 class="text-3xl font-bold">
+  Equipment
+</h1>
 <div id="equipment">
   <% @equipment.each do |equipment| %>
     <%= render equipment %>
     <p>
-      <%= link_to "Show this equipment", equipment %>
+      <%= link_to "Show this equipments", equipment %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New equipment", new_equipment_path %>
+<%= link_to "New equipments", new_equipment_path %>

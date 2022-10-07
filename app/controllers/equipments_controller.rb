@@ -1,25 +1,25 @@
-class EquipmentController < ApplicationController
+class EquipmentsController < ApplicationController
   before_action :set_equipment, only: %i[ show edit update destroy ]
 
-  # GET /equipment or /equipment.json
+  # GET /equipments or /equipments.json
   def index
     @equipment = Equipment.all
   end
 
-  # GET /equipment/1 or /equipment/1.json
+  # GET /equipments/1 or /equipments/1.json
   def show
   end
 
-  # GET /equipment/new
+  # GET /equipments/new
   def new
     @equipment = Equipment.new
   end
 
-  # GET /equipment/1/edit
+  # GET /equipments/1/edit
   def edit
   end
 
-  # POST /equipment or /equipment.json
+  # POST /equipments or /equipments.json
   def create
     @equipment = Equipment.new(equipment_params)
 
@@ -34,7 +34,7 @@ class EquipmentController < ApplicationController
     end
   end
 
-  # PATCH/PUT /equipment/1 or /equipment/1.json
+  # PATCH/PUT /equipments/1 or /equipments/1.json
   def update
     respond_to do |format|
       if @equipment.update(equipment_params)
@@ -47,12 +47,12 @@ class EquipmentController < ApplicationController
     end
   end
 
-  # DELETE /equipment/1 or /equipment/1.json
+  # DELETE /equipments/1 or /equipments/1.json
   def destroy
     @equipment.destroy
 
     respond_to do |format|
-      format.html { redirect_to equipment_index_url, notice: "Equipment was successfully destroyed." }
+      format.html { redirect_to equipments_url, notice: "Equipment was successfully destroyed." }
       format.json { head :no_content }
     end
   end

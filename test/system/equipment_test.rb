@@ -10,9 +10,9 @@ class EquipmentTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Equipment"
   end
 
-  test "should create equipment" do
+  test "should create equipments" do
     visit equipment_url
-    click_on "New equipment"
+    click_on "New equipments"
 
     fill_in "Description", with: @equipment.description
     fill_in "Model", with: @equipment.model
@@ -26,7 +26,7 @@ class EquipmentTest < ApplicationSystemTestCase
 
   test "should update Equipment" do
     visit equipment_url(@equipment)
-    click_on "Edit this equipment", match: :first
+    click_on "Edit this equipments", match: :first
 
     fill_in "Description", with: @equipment.description
     fill_in "Model", with: @equipment.model
@@ -40,7 +40,7 @@ class EquipmentTest < ApplicationSystemTestCase
 
   test "should destroy Equipment" do
     visit equipment_url(@equipment)
-    click_on "Destroy this equipment", match: :first
+    click_on "Destroy this equipments", match: :first
 
     assert_text "Equipment was successfully destroyed"
   end

@@ -15,7 +15,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create equipment" do
+  test "should create equipments" do
     assert_difference("Equipment.count") do
       post equipment_index_url, params: {
         equipment: {
@@ -29,7 +29,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to equipment_url(Equipment.last)
   end
 
-  test "should show equipment" do
+  test "should show equipments" do
     get equipment_url(@equipment)
     assert_response :success
   end
@@ -39,7 +39,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should update equipment" do
+  test "should update equipments" do
     patch equipment_url(@equipment), params: {
       equipment: {
         description: @equipment.description,
@@ -50,7 +50,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to equipment_url(@equipment)
   end
 
-  test "should destroy equipment" do
+  test "should destroy equipments" do
     assert_difference("Equipment.count", -1) do
       delete equipment_url(@equipment)
     end
