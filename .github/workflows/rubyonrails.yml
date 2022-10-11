@@ -29,6 +29,9 @@ jobs:
           gem install bundler
           bundle install
 
+      - name: Assets Precompile
+        run: bundle exec rake assets:precompile
+
       - name: Set up database schema
         run: |
           chmod u+x bin/rails
