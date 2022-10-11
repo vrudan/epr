@@ -6,7 +6,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get equipment_index_url
+    get equipments_url
     assert_response :success
   end
 
@@ -17,7 +17,7 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
 
   test "should create equipments" do
     assert_difference("Equipment.count") do
-      post equipment_index_url, params: {
+      post equipments_url, params: {
         equipment: {
           description: @equipment.description,
           model: @equipment.model,
@@ -55,6 +55,6 @@ class EquipmentControllerTest < ActionDispatch::IntegrationTest
       delete equipment_url(@equipment)
     end
 
-    assert_redirected_to equipment_index_url
+    assert_redirected_to equipments_url
   end
 end
